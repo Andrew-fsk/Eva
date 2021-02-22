@@ -1,0 +1,104 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  background-color: rgba(45, 24, 41, 1);
+  padding: 10px 0;
+  @include breakpoint(sm-down){
+    position: initial;
+    padding: 30px 0;
+  }
+  @include breakpoint(mxs){
+    padding: 10px 0;
+  }
+}
+
+.logo{
+  @include breakpoint(sm-down){
+    margin-bottom: 25px;
+  }
+  @include breakpoint(mxs){
+    display: none;
+  }
+}
+
+.header-row {
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(space-between);
+  @include breakpoint(sm-down){
+    @include flex-direction(column);
+  }
+}
+
+nav {
+  @include flexbox;
+  @include align-items(center);
+  @include breakpoint(sm-down){
+    @include flex-direction(column);
+  }
+  @include breakpoint(mxs){
+    display: none;
+  }
+}
+
+.nav-link {
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  transition: opacity .2s;
+  margin: 0 15px;
+  display: block;
+  text-transform: uppercase;
+  @include breakpoint(sm-down){
+    margin: 0 0 20px 0;
+  }
+  &:first-of-type{
+    margin-left: 0;
+  }
+  &:last-of-type{
+    margin-right: 0;
+  }
+  &.active,&:hover {
+    opacity: .7;
+  }
+}
+
+.callback{
+  font-weight: bold;
+  text-decoration: none;
+  color:#ffffff;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border: 2px solid #1e071b;
+  background-color: #daa942;
+  padding: 11px 30px;
+  cursor: pointer;
+  input{
+    display: none;
+  }
+  &.big{
+    font-size: 24px;
+    color: #000000;
+    font-weight: 600;
+    padding: 15px 30px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    @include breakpoint(xs){
+      font-size: 16px;
+    }
+    &:hover{
+      color: $yellow;
+      background-color: #2d1829;
+      border-color: $yellow;
+    }
+  }
+  @include breakpoint(mxs){
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 30px;
+    width: 280px;
+  }
+}

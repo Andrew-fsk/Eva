@@ -1,35 +1,36 @@
-$font-family: 'Open-Sans', sans-serif;
+$font-family: 'Montserrat', sans-serif;
 $font-family-alt: $font-family;
 $font-family-validation: $font-family;
 $font-family-headings: $font-family;
 
-$text-color: #363636;
-$font-size: 16px;
-$font-size-paragraph: 16px;
+$yellow: #daa942;
+$text-color: #000000;
+$font-size: 14px;
+$font-size-paragraph: 14px;
 $paragraph-margin: 24px; //margin-bottom
 $paragraph-height: 1.5;  //line-height
 $paragraph-color: $text-color;
 $list-image: false;  //list.png
 
-$heading-margin: 50, 35 , 48, 46, 44, 42;
-$heading-font-size: 64, 48 , 36 , 28, 26, 24;
-$heading-font-weight: 600,600,600,600,600,600; // 1 = "normal"(400)
-$heading-uppercase: 0,0,0,0,0,0; // 0 = "none", 1 = "uppercase"
+$heading-margin: 20, 35 , 48, 46, 44, 42;
+$heading-font-size: 50, 48 , 36 , 28, 26, 24;
+$heading-font-weight: 400,400,400,400,400,400; // 1 = "normal"(400)
+$heading-uppercase: 1,1,1,1,1,1; // 0 = "none", 1 = "uppercase"
 $heading-text-align: c,c,c,c,c,c; // c = "center", l = "left", r = "right"
 $heading-color: $text-color;
 
 // SM Heading sizes
 $sm-heading-change: true;
-$sm-heading-margin: 50, 35, true, true, true, false;
+$sm-heading-margin: 40, 35, true, true, true, false;
 $sm-heading-font-size: 40, 30, 24, true, true, false;
 // XS Heading sizes
 $xs-heading-change: true;
 $xs-heading-margin: true, true, true, true, false, false;
-$xs-heading-font-size: 28, 26, 24, 22, 20, 18;
+$xs-heading-font-size: 22, 26, 24, 22, 20, 18;
 
 
 $background-color: #fff;
-$link-color: #ff3636;
+$link-color: $yellow;
 $link-hover-color: false;
 
 $table-border-color: #d6d6d6;

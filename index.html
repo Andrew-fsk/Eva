@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Eva</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <div class="container">
+            <div class="header-row">
+                <a href="#" class="logo" title="Eva">
+                    <img src="/images/logo.png" alt="Logo">
+                </a>
+                <nav>
+                    <a href="#main" class="nav-link active">Главная</a>
+                    <a href="#girls" class="nav-link">Девушки</a>
+                    <a href="#programs" class="nav-link">Программы</a>
+                </nav>
+                <a href="tel:+78125027037" class="callback">+ 7 (812) 502-70-37</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="container">
+                <div class="inner-banner">
+                    <h1>ЭРОТИЧЕСКИЙ МАССАЖ<br>В ЦЕНТРЕ ПЕТЕРБУРГА 24/7</h1>
+                    <div class="description h1">Сегодня в смене <br> 9 девушек!</div>
+                    <div class="typed-wrap ac-jc">
+                        <div class="banner-typed">НЕЖНО</div>
+                    </div>
+                    <div class="ac-jc">
+                        <div class="callback big" onclick="modalToggle()">ХОЧУ МАССАЖ ПРЯМО СЕЙЧАС</div>
+                    </div>
+                    <div class="info-text">Все фотографии реальные и выполнены в нашем салоне</div>
+                </div>
+            </div>
+        </div>
+        <div class="modal hide">
+            <div class="close-modal" onclick="modalToggle()"></div>
+            <h4>Оставьте заявку и мы свяжемся с Вами</h4>
+            <form action="">
+                <div class="validation-field">
+                    <input type="text">
+                    <div class="placeholder">Ваше имя:</div>
+                </div>
+                <div class="validation-field">
+                    <input type="text">
+                    <div class="placeholder">Ваше имя:</div>
+                </div>
+                <div class="ac-jc">
+                    <label class="callback">
+                        <span>Отправить</span>
+                        <input type="submit">
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div class="back-layer hide" onclick="modalToggle()"></div>
+    </main>
+</div>
+<footer></footer>
+<script src="/js/ajquery-1.12.0.min.js"></script>
+<script src="/js/typed.min.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+</html>

@@ -40,11 +40,15 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
-  font-family: "Open-Sans", sans-serif;
-  font-size: 16px;
-  color: #363636;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #000000;
   width: 100vw;
   max-width: 100%;
+}
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
 }
 body.fancybox-iosfix {
   position: relative !important;
@@ -54,6 +58,17 @@ body.fancybox-iosfix {
 }
 body .wrap {
   flex: 1 0 auto;
+  padding-top: 97px;
+}
+@media (max-width: 1024px) {
+  body .wrap {
+    padding-top: 0;
+  }
+}
+@media (hover: none) and (pointer: coarse) {
+  body .wrap {
+    padding-top: 0;
+  }
 }
 
 ul, ol {
@@ -63,14 +78,14 @@ ul, ol {
 ul li, ol li {
   margin-bottom: 10px;
   margin-left: 15px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.2;
-  color: #363636;
+  color: #000000;
 }
 
 a {
   text-decoration: underline;
-  color: #ff3636;
+  color: #daa942;
 }
 a:hover {
   text-decoration: none;
@@ -80,35 +95,37 @@ a img {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 100%;
   font-weight: normal;
-  color: #363636;
+  color: #000000;
 }
 
 h1, .h1 {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
   text-align: center;
-  font-weight: 600;
-  font-size: 64px;
+  font-weight: 400;
+  font-size: 50px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   h1, .h1 {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-size: 40px;
   }
 }
 @media (max-width: 767px) {
   h1, .h1 {
     margin-bottom: truepx;
-    font-size: 28px;
+    font-size: 22px;
   }
 }
 h2, .h2 {
   margin-bottom: 35px;
+  text-transform: uppercase;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 48px;
 }
 
@@ -126,8 +143,9 @@ h2, .h2 {
 }
 h3, .h3 {
   margin-bottom: 48px;
+  text-transform: uppercase;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 36px;
 }
 
@@ -145,8 +163,9 @@ h3, .h3 {
 }
 h4, .h4 {
   margin-bottom: 46px;
+  text-transform: uppercase;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 28px;
 }
 
@@ -164,8 +183,9 @@ h4, .h4 {
 }
 h5, .h5 {
   margin-bottom: 44px;
+  text-transform: uppercase;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 26px;
 }
 
@@ -182,8 +202,9 @@ h5, .h5 {
 }
 h6, .h6 {
   margin-bottom: 42px;
+  text-transform: uppercase;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 24px;
 }
 
@@ -194,21 +215,21 @@ h6, .h6 {
 }
 p {
   margin-bottom: 24px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
-  color: #363636;
+  color: #000000;
 }
 
 table {
   width: 100%;
   margin-bottom: 40px;
   border-collapse: collapse;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 table th, table td {
   padding: 15px 10px;
   border: 1px solid #d6d6d6;
-  font-size: 16px;
+  font-size: 14px;
   color: #3c3c3c;
 }
 @media (max-width: 450px) {
@@ -222,7 +243,7 @@ table th {
 }
 
 input[type=submit] {
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   outline: none;
   cursor: pointer;
   line-height: 1.3;
@@ -231,7 +252,7 @@ input[type=submit] {
 }
 
 textarea, input, select {
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 button {
@@ -274,7 +295,7 @@ button {
   position: relative;
   left: 15px;
   padding-right: 15px;
-  font-size: 16px;
+  font-size: 14px;
 }
 .text-page table img {
   float: none;

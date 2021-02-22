@@ -5,7 +5,7 @@
       <option name="arguments" value="--update $FileName$:$ProjectFileDir$/css/$FileNameWithoutExtension$.css" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
-      <option name="exitCodeBehavior" value="ERROR" />
+      <option name="exitCodeBehavior" value="NEVER" />
       <option name="fileExtension" value="scss" />
       <option name="immediateSync" value="true" />
       <option name="name" value="SCSS" />
@@ -21,7 +21,7 @@
       <option name="workingDir" value="$FileDir$" />
       <envs />
     </TaskOptions>
-    <TaskOptions isEnabled="true">
+    <TaskOptions isEnabled="false">
       <option name="arguments" value="$FileName$ --pretty --out $ProjectFileDir$\templates" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
