@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Eva</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="wrap">
@@ -20,264 +20,327 @@
                     <img src="./images/logo.png" alt="Logo">
                 </a>
                 <nav>
-                    <a href="#main" class="nav-link active">Главная</a>
+                    <a href="#banner" class="nav-link active">Главная</a>
                     <a href="#girls" class="nav-link">Девушки</a>
-                    <a href="#programs" class="nav-link">Программы</a>
+                    <a href="#program" class="nav-link">Программы</a>
                 </nav>
                 <a href="tel:+78125027037" class="callback">+ 7 (812) 502-70-37</a>
             </div>
         </div>
     </header>
     <main>
-        <div class="banner">
-            <div class="container">
-                <div class="inner-banner">
-                    <h1>ЭРОТИЧЕСКИЙ МАССАЖ<br>В ЦЕНТРЕ ПЕТЕРБУРГА 24/7</h1>
-                    <div class="description h1">Сегодня в смене <br> 9 девушек!</div>
-                    <div class="typed-wrap ac-jc">
-                        <div class="banner-typed">НЕЖНО</div>
+        <section id="banner">
+            <div class="banner">
+                <div class="container">
+                    <div class="inner-banner">
+                        <h1>ЭРОТИЧЕСКИЙ МАССАЖ<br>В ЦЕНТРЕ ПЕТЕРБУРГА 24/7</h1>
+                        <div class="description h1">Сегодня в смене <br> 9 девушек!</div>
+                        <div class="typed-wrap ac-jc">
+                            <div class="banner-typed">НЕЖНО</div>
+                        </div>
+                        <div class="ac-jc">
+                            <div class="callback big" onclick="modalToggle()">ХОЧУ МАССАЖ ПРЯМО СЕЙЧАС</div>
+                        </div>
+                        <div class="info-text">Все фотографии реальные и выполнены в нашем салоне</div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="girls">
+            <div class="master-block">
+                <h2>СЕГОДНЯ В САЛОНЕ РАБОТАЮТ 9 МАСТЕРОВ</h2>
+                <div class="ac-jc">
+                    <a href="tel:8812502-70-37" class="callback big">ХОЧУ МАССАЖ</a>
+                </div>
+                <div class="ac-jc">
+                    <div class="h1 master-title">НАШИ МАСТЕРА</div>
+                </div>
+                <div class="container">
+                    <div class="master-grid">
+                        <div class="master-item" id="1">
+                            <div class="master-image">
+                                <img src="./images/master.jpg" alt="Руслана, 22 года">
+                            </div>
+                            <div class="master-info">
+                                <div class="name">Руслана, 22 года</div>
+                                <div class="text">Рост 168 см<br>Вес 56 кг<br>Размер груди 5<br>М. Гостиный Двор<br>тел:
+                                    +7(812)-502-70-37
+                                </div>
+                                <div class="price">От 2800 р.</div>
+                                <div class="more-column">
+                                    <div class="more">Еще фото</div>
+                                    <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="master-item" id="2">
+                            <div class="master-image">
+                                <img src="./images/master.jpg" alt="Руслана, 22 года">
+                            </div>
+                            <div class="master-info">
+                                <div class="name">Руслана, 22 года</div>
+                                <div class="text">Рост 168 см<br>Вес 56 кг<br>Размер груди 5<br>М. Гостиный Двор<br>тел:
+                                    +7(812)-502-70-37
+                                </div>
+                                <div class="price">От 2800 р.</div>
+                                <div class="more-column">
+                                    <div class="more">Еще фото</div>
+                                    <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="master-item" id="3">
+                            <div class="master-image">
+                                <img src="./images/master.jpg" alt="Руслана, 22 года">
+                            </div>
+                            <div class="master-info">
+                                <div class="name">Руслана, 22 года</div>
+                                <div class="text">Рост 168 см<br>Вес 56 кг<br>Размер груди 5<br>М. Гостиный Двор<br>тел:
+                                    +7(812)-502-70-37
+                                </div>
+                                <div class="price">От 2800 р.</div>
+                                <div class="more-column">
+                                    <div class="more">Еще фото</div>
+                                    <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="master-item" id="4">
+                            <div class="master-image">
+                                <img src="./images/master.jpg" alt="Руслана, 22 года">
+                            </div>
+                            <div class="master-info">
+                                <div class="name">Руслана, 22 года</div>
+                                <div class="text">Рост 168 см<br>Вес 56 кг<br>Размер груди 5<br>М. Гостиный Двор<br>тел:
+                                    +7(812)-502-70-37
+                                </div>
+                                <div class="price">От 2800 р.</div>
+                                <div class="more-column">
+                                    <div class="more">Еще фото</div>
+                                    <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="master-item" id="5">
+                            <div class="master-image">
+                                <img src="./images/master.jpg" alt="Руслана, 22 года">
+                            </div>
+                            <div class="master-info">
+                                <div class="name">Руслана, 22 года</div>
+                                <div class="text">Рост 168 см<br>Вес 56 кг<br>Размер груди 5<br>М. Гостиный Двор<br>тел:
+                                    +7(812)-502-70-37
+                                </div>
+                                <div class="price">От 2800 р.</div>
+                                <div class="more-column">
+                                    <div class="more">Еще фото</div>
+                                    <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="master-item" id="6">
+                            <div class="master-image">
+                                <img src="./images/master.jpg" alt="Руслана, 22 года">
+                            </div>
+                            <div class="master-info">
+                                <div class="name">Руслана, 22 года</div>
+                                <div class="text">Рост 168 см<br>Вес 56 кг<br>Размер груди 5<br>М. Гостиный Двор<br>тел:
+                                    +7(812)-502-70-37
+                                </div>
+                                <div class="price">От 2800 р.</div>
+                                <div class="more-column">
+                                    <div class="more">Еще фото</div>
+                                    <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="master-item" id="7">
+                            <div class="master-image">
+                                <img src="./images/master.jpg" alt="Руслана, 22 года">
+                            </div>
+                            <div class="master-info">
+                                <div class="name">Руслана, 22 года</div>
+                                <div class="text">Рост 168 см<br>Вес 56 кг<br>Размер груди 5<br>М. Гостиный Двор<br>тел:
+                                    +7(812)-502-70-37
+                                </div>
+                                <div class="price">От 2800 р.</div>
+                                <div class="more-column">
+                                    <div class="more">Еще фото</div>
+                                    <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="master-item" id="8">
+                            <div class="master-image">
+                                <img src="./images/master.jpg" alt="Руслана, 22 года">
+                            </div>
+                            <div class="master-info">
+                                <div class="name">Руслана, 22 года</div>
+                                <div class="text">Рост 168 см<br>Вес 56 кг<br>Размер груди 5<br>М. Гостиный Двор<br>тел:
+                                    +7(812)-502-70-37
+                                </div>
+                                <div class="price">От 2800 р.</div>
+                                <div class="more-column">
+                                    <div class="more">Еще фото</div>
+                                    <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="art-block">
+            <div class="container">
+                <div class="text-side">
+                    <div class="h1 master-title">ПРОГРАММЫ</div>
+                    <div class="description">Мы знаем каким должен быть настоящий эротический
+                        массаж. Наша философия – это любовь к мужчине.
+                    </div>
+                    <div class="art-list">
+                        <div class="art-item"><img src="./images/art1.png" alt="">Девушка выполнит ВСЕ эротические фишки
+                            программы, которых вы ждете!
+                        </div>
+                        <div class="art-item"><img src="./images/art2.png" alt="">Не соответствует заявленному качеству
+                            – вернем деньги!
+                        </div>
+                        <div class="art-item"><img src="./images/art3.png" alt="">Никаких дополнительных доплат!</div>
+                        <div class="art-item"><img src="./images/art4.png" alt="">Дизайнерские интерьеры, индивидуальный
+                            сервис!
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <section id="program">
+            <div class="master-block">
+                <div class="container">
                     <div class="ac-jc">
-                        <div class="callback big" onclick="modalToggle()">ХОЧУ МАССАЖ ПРЯМО СЕЙЧАС</div>
+                        <div class="h1 master-title">ПРОГРАММЫ</div>
                     </div>
-                    <div class="info-text">Все фотографии реальные и выполнены в нашем салоне</div>
-                </div>
-            </div>
-        </div>
-        <div class="master-block">
-            <h2>СЕГОДНЯ В САЛОНЕ РАБОТАЮТ 9 МАСТЕРОВ</h2>
-            <div class="ac-jc">
-                <a href="tel:8812502-70-37" class="callback big">ХОЧУ МАССАЖ</a>
-            </div>
-            <div class="ac-jc">
-                <div class="h1 master-title">НАШИ МАСТЕРА</div>
-            </div>
-            <div class="container">
-                <div class="master-grid">
-                    <div class="master-item" id="1">
-                        <div class="master-image">
-                            <img src="./images/master.jpg" alt="Руслана, 22 года">
-                        </div>
-                        <div class="master-info">
-                            <div class="name">Руслана, 22 года</div>
-                            <div class="text">Рост 168 см<br>Вес 56 кг<br>Размер груди 5<br>М. Гостиный Двор<br>тел:
-                                +7(812)-502-70-37
-                            </div>
-                            <div class="price">От 2800 р.</div>
-                            <div class="more-column">
-                                <div class="more">Еще фото</div>
-                                <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="master-item" id="2">
-                        <div class="master-image">
-                            <img src="./images/master.jpg" alt="Руслана, 22 года">
-                        </div>
-                        <div class="master-info">
-                            <div class="name">Руслана, 22 года</div>
-                            <div class="text">Рост 168 см<br>Вес 56 кг<br>Размер груди 5<br>М. Гостиный Двор<br>тел:
-                                +7(812)-502-70-37
-                            </div>
-                            <div class="price">От 2800 р.</div>
-                            <div class="more-column">
-                                <div class="more">Еще фото</div>
-                                <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="master-item" id="3">
-                        <div class="master-image">
-                            <img src="./images/master.jpg" alt="Руслана, 22 года">
-                        </div>
-                        <div class="master-info">
-                            <div class="name">Руслана, 22 года</div>
-                            <div class="text">Рост 168 см<br>Вес 56 кг<br>Размер груди 5<br>М. Гостиный Двор<br>тел:
-                                +7(812)-502-70-37
-                            </div>
-                            <div class="price">От 2800 р.</div>
-                            <div class="more-column">
-                                <div class="more">Еще фото</div>
-                                <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
-
+                    <div class="tabs">
+                        <select class="mob-select-tab">
+                            <option value="tab-1">Основные</option>
+                            <option value="tab-2">Дополнительные</option>
+                        </select>
+                        <ul class="tab-list">
+                            <li><a href="#tab-1">Основные</a></li>
+                            <li><a href="#tab-2">Дополнительные</a></li>
+                        </ul>
+                        <div id="tab-1">
+                            <div class="program-grid">
+                                <a href="#" class="program-item">
+                                    <img src="images/program.jpg" alt="program">
+                                    <span class="title">Эротический соблазн</span>
+                                    <span class="program-more">Подробнее</span>
+                                </a>
+                                <a href="#" class="program-item">
+                                    <img src="images/program.jpg" alt="program">
+                                    <span class="title">Эротический соблазн</span>
+                                    <span class="program-more">Подробнее</span>
+                                </a>
+                                <a href="#" class="program-item">
+                                    <img src="images/program.jpg" alt="program">
+                                    <span class="title">Эротический соблазн</span>
+                                    <span class="program-more">Подробнее</span>
+                                </a>
+                                <a href="#" class="program-item">
+                                    <img src="images/program.jpg" alt="program">
+                                    <span class="title">Эротический соблазн</span>
+                                    <span class="program-more">Подробнее</span>
+                                </a>
+                                <a href="#" class="program-item">
+                                    <img src="images/program.jpg" alt="program">
+                                    <span class="title">Эротический соблазн</span>
+                                    <span class="program-more">Подробнее</span>
+                                </a>
+                                <a href="#" class="program-item">
+                                    <img src="images/program.jpg" alt="program">
+                                    <span class="title">Эротический соблазн</span>
+                                    <span class="program-more">Подробнее</span>
+                                </a>
+                                <a href="#" class="program-item">
+                                    <img src="images/program.jpg" alt="program">
+                                    <span class="title">Эротический соблазн</span>
+                                    <span class="program-more">Подробнее</span>
+                                </a>
+                                <a href="#" class="program-item">
+                                    <img src="images/program.jpg" alt="program">
+                                    <span class="title">Эротический соблазн</span>
+                                    <span class="program-more">Подробнее</span>
+                                </a>
+                                <a href="#" class="program-item">
+                                    <img src="images/program.jpg" alt="program">
+                                    <span class="title">Эротический соблазн</span>
+                                    <span class="program-more">Подробнее</span>
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="master-item" id="4">
-                        <div class="master-image">
-                            <img src="./images/master.jpg" alt="Руслана, 22 года">
-                        </div>
-                        <div class="master-info">
-                            <div class="name">Руслана, 22 года</div>
-                            <div class="text">Рост 168 см<br>Вес 56 кг<br>Размер груди 5<br>М. Гостиный Двор<br>тел:
-                                +7(812)-502-70-37
-                            </div>
-                            <div class="price">От 2800 р.</div>
-                            <div class="more-column">
-                                <div class="more">Еще фото</div>
-                                <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="master-item" id="5">
-                        <div class="master-image">
-                            <img src="./images/master.jpg" alt="Руслана, 22 года">
-                        </div>
-                        <div class="master-info">
-                            <div class="name">Руслана, 22 года</div>
-                            <div class="text">Рост 168 см<br>Вес 56 кг<br>Размер груди 5<br>М. Гостиный Двор<br>тел:
-                                +7(812)-502-70-37
-                            </div>
-                            <div class="price">От 2800 р.</div>
-                            <div class="more-column">
-                                <div class="more">Еще фото</div>
-                                <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="master-item" id="6">
-                        <div class="master-image">
-                            <img src="./images/master.jpg" alt="Руслана, 22 года">
-                        </div>
-                        <div class="master-info">
-                            <div class="name">Руслана, 22 года</div>
-                            <div class="text">Рост 168 см<br>Вес 56 кг<br>Размер груди 5<br>М. Гостиный Двор<br>тел:
-                                +7(812)-502-70-37
-                            </div>
-                            <div class="price">От 2800 р.</div>
-                            <div class="more-column">
-                                <div class="more">Еще фото</div>
-                                <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="master-item" id="6">
-                        <div class="master-image">
-                            <img src="./images/master.jpg" alt="Руслана, 22 года">
-                        </div>
-                        <div class="master-info">
-                            <div class="name">Руслана, 22 года</div>
-                            <div class="text">Рост 168 см<br>Вес 56 кг<br>Размер груди 5<br>М. Гостиный Двор<br>тел:
-                                +7(812)-502-70-37
-                            </div>
-                            <div class="price">От 2800 р.</div>
-                            <div class="more-column">
-                                <div class="more">Еще фото</div>
-                                <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="master-item" id="7">
-                        <div class="master-image">
-                            <img src="./images/master.jpg" alt="Руслана, 22 года">
-                        </div>
-                        <div class="master-info">
-                            <div class="name">Руслана, 22 года</div>
-                            <div class="text">Рост 168 см<br>Вес 56 кг<br>Размер груди 5<br>М. Гостиный Двор<br>тел:
-                                +7(812)-502-70-37
-                            </div>
-                            <div class="price">От 2800 р.</div>
-                            <div class="more-column">
-                                <div class="more">Еще фото</div>
-                                <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
+                        <div id="tab-2">
+                            <div class="program-grid">
+                                <a href="#" class="program-item">
+                                    <img src="images/program2.jpg" alt="program">
+                                    <span class="title">Эротический соблазн</span>
+                                    <span class="program-more">Подробнее</span>
+                                </a>
+                                <a href="#" class="program-item">
+                                    <img src="images/program2.jpg" alt="program">
+                                    <span class="title">Эротический соблазн</span>
+                                    <span class="program-more">Подробнее</span>
+                                </a>
+                                <a href="#" class="program-item">
+                                    <img src="images/program2.jpg" alt="program">
+                                    <span class="title">Эротический соблазн</span>
+                                    <span class="program-more">Подробнее</span>
+                                </a>
+                                <a href="#" class="program-item">
+                                    <img src="images/program2.jpg" alt="program">
+                                    <span class="title">Эротический соблазн</span>
+                                    <span class="program-more">Подробнее</span>
+                                </a>
+                                <a href="#" class="program-item">
+                                    <img src="images/program2.jpg" alt="program">
+                                    <span class="title">Эротический соблазн</span>
+                                    <span class="program-more">Подробнее</span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <div class="master-block">
             <div class="container">
                 <div class="ac-jc">
-                    <div class="h1 master-title">ПРОГРАММЫ</div>
+                    <div class="h1 master-title">НАШИ КЛИЕНТЫ ЛЮБЯТ НАС</div>
                 </div>
-                <div class="tabs">
-                    <select class="mob-select-tab">
-                        <option value="tab-1">Основные</option>
-                        <option value="tab-2">Дополнительные</option>
-                    </select>
-                    <ul class="tab-list">
-                        <li><a href="#tab-1">Основные</a></li>
-                        <li><a href="#tab-2">Дополнительные</a></li>
-                    </ul>
-                    <div id="tab-1">
-                        <div class="program-grid">
-                            <a href="#" class="program-item">
-                                <img src="images/program.jpg" alt="program">
-                                <span class="title">Эротический соблазн</span>
-                                <span class="program-more">Подробнее</span>
-                            </a>
-                            <a href="#" class="program-item">
-                                <img src="images/program.jpg" alt="program">
-                                <span class="title">Эротический соблазн</span>
-                                <span class="program-more">Подробнее</span>
-                            </a>
-                            <a href="#" class="program-item">
-                                <img src="images/program.jpg" alt="program">
-                                <span class="title">Эротический соблазн</span>
-                                <span class="program-more">Подробнее</span>
-                            </a>
-                            <a href="#" class="program-item">
-                                <img src="images/program.jpg" alt="program">
-                                <span class="title">Эротический соблазн</span>
-                                <span class="program-more">Подробнее</span>
-                            </a>
-                            <a href="#" class="program-item">
-                                <img src="images/program.jpg" alt="program">
-                                <span class="title">Эротический соблазн</span>
-                                <span class="program-more">Подробнее</span>
-                            </a>
-                            <a href="#" class="program-item">
-                                <img src="images/program.jpg" alt="program">
-                                <span class="title">Эротический соблазн</span>
-                                <span class="program-more">Подробнее</span>
-                            </a>
-                            <a href="#" class="program-item">
-                                <img src="images/program.jpg" alt="program">
-                                <span class="title">Эротический соблазн</span>
-                                <span class="program-more">Подробнее</span>
-                            </a>
-                            <a href="#" class="program-item">
-                                <img src="images/program.jpg" alt="program">
-                                <span class="title">Эротический соблазн</span>
-                                <span class="program-more">Подробнее</span>
-                            </a>
-                            <a href="#" class="program-item">
-                                <img src="images/program.jpg" alt="program">
-                                <span class="title">Эротический соблазн</span>
-                                <span class="program-more">Подробнее</span>
-                            </a>
+            </div>
+            <div class="reviews-slider">
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="text">Посетил данное заведение в будний день. Я в восторге! Много прекрасных
+                            девушек! Обаятельные администраторы, обслуживание на высшем уровне!
                         </div>
+                        <div class="name">Дмитрий</div>
                     </div>
-                    <div id="tab-2">
-                        <div class="program-grid">
-                            <a href="#" class="program-item">
-                                <img src="images/program2.jpg" alt="program">
-                                <span class="title">Эротический соблазн</span>
-                                <span class="program-more">Подробнее</span>
-                            </a>
-                            <a href="#" class="program-item">
-                                <img src="images/program2.jpg" alt="program">
-                                <span class="title">Эротический соблазн</span>
-                                <span class="program-more">Подробнее</span>
-                            </a>
-                            <a href="#" class="program-item">
-                                <img src="images/program2.jpg" alt="program">
-                                <span class="title">Эротический соблазн</span>
-                                <span class="program-more">Подробнее</span>
-                            </a>
-                            <a href="#" class="program-item">
-                                <img src="images/program2.jpg" alt="program">
-                                <span class="title">Эротический соблазн</span>
-                                <span class="program-more">Подробнее</span>
-                            </a>
-                            <a href="#" class="program-item">
-                                <img src="images/program2.jpg" alt="program">
-                                <span class="title">Эротический соблазн</span>
-                                <span class="program-more">Подробнее</span>
-                            </a>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="text">
+                            Марта, спасибо за поднятое настроение в пятницу!) Очень порадовала квалификация массажистки,
+                            впечатлений полно) Спасибо, приду еще1
                         </div>
+                        <div class="name">Банкир</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="text">Посетил данное заведение в будний день. Я в восторге! Много прекрасных
+                            девушек! Обаятельные администраторы, обслуживание на высшем уровне!
+                        </div>
+                        <div class="name">Дмитрий</div>
                     </div>
                 </div>
             </div>
@@ -286,6 +349,26 @@
             <h2>Акции</h2>
             <a href="tel:88122445635" class="callback big">Массаж в JOY от 2500</a>
             <a href="tel:8812502-70-37" class="callback big">-10% от 5000</a>
+        </div>
+        <div class="text-block master-block">
+            <div class="container">
+                <div class="ac-jc">
+                    <div class="master-title">
+                        <h2>ТЕКСТОВЫЙ БЛОК</h2>
+                    </div>
+                </div>
+                <div class="text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.</div>
+            </div>
+        </div>
+        <div class="text-block master-block">
+            <div class="container">
+                <div class="ac-jc">
+                    <div class="master-title">
+                        <h2>ТЕКСТОВЫЙ БЛОК</h2>
+                    </div>
+                </div>
+                <div class="text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." </div>
+            </div>
         </div>
         <div class="modal hide">
             <div class="close-modal" onclick="modalToggle()"></div>
@@ -394,7 +477,9 @@
                     <div class="info">
                         <div class="name">Руслана, 22 года</div>
                         <div class="price">От 2800р.</div>
-                        <div class="text">Аппетитная Руслана любит все цветы, кроме роз. Шипы ей и в общении не по вкусу. Да и вообще - из остренького только соски.</div>
+                        <div class="text">Аппетитная Руслана любит все цветы, кроме роз. Шипы ей и в общении не по
+                            вкусу. Да и вообще - из остренького только соски.
+                        </div>
                     </div>
                 </div>
             </div>

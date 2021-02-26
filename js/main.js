@@ -24,13 +24,20 @@ $(document).ready(function ($) {
         });
     }
 
-    $(document).on('click touchend', '.master-item', function (e) {
-        if(!$(e.target).hasClass('tel-more')){
-            modalGirlToggle();
-            return false;
-        }
-    });
+    let touchmoved;
 
+    $(document).on('click touchend', '.master-item', function (e) {
+        if (touchmoved !== true) {
+            if(!$(e.target).hasClass('tel-more')){
+                modalGirlToggle();
+                return false;
+            }
+        }
+    }).on('touchmove', '.master-item', function () {
+        touchmoved = true;
+    }).on('touchstart', '.master-item', function () {
+        touchmoved = false;
+    });
 
     $('.slider').slick({
         swipeToSlide: true,
@@ -49,6 +56,18 @@ $(document).ready(function ($) {
                 }
             },
         ]
+    });
+
+    $('.reviews-slider').slick({
+        swipeToSlide: true,
+        arrows: true,
+        dots: true,
+        slidesToShow: 1,
+        infinite: false,
+        slidesToScroll: 1,
+        touchMove: true,
+        adaptiveHeight: true,
+        fade: true,
     });
 
     $('.slider-nav').slick({
@@ -73,12 +92,48 @@ $(document).ready(function ($) {
     $('.square').each(function () {
         $(this).css('height', $(this).innerWidth());
     })
+
+    const sections = document.querySelectorAll("section[id]");
+
+    window.addEventListener("scroll", navHighlighter);
+
+    function navHighlighter() {
+
+        let scrollY = window.pageYOffset;
+
+        sections.forEach(current => {
+            const sectionHeight = current.offsetHeight;
+            const sectionTop = current.offsetTop - 130;
+            sectionId = current.getAttribute("id");
+
+            if (
+                scrollY > sectionTop &&
+                scrollY <= sectionTop + sectionHeight
+            ){
+                document.querySelector("nav a[href*=" + sectionId + "]").classList.add("active");
+            } else {
+                document.querySelector("nav a[href*=" + sectionId + "]").classList.remove("active");
+            }
+        });
+    }
+
+    let menuItems = $('nav').find("a");
+
+    menuItems.click(function(e){
+        var href = $(this).attr("href"),
+            offsetTop = href === "#" ? 0 : $(href).offset().top-$('header').innerHeight();
+        $('html, body').stop().animate({
+            scrollTop: offsetTop
+        }, 850);
+        e.preventDefault();
+    });
+
 })
 
 
 $(window).resize(function () {
     $('.square').each(function () {
-        $(this).css('height', $(this).innerWidth());
+        $(this).css('height', $('.slider .slide').innerWidth());
     })
 })
 
