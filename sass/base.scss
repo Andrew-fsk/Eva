@@ -20,6 +20,7 @@ body {
   @include flexbox;
   @include flex-direction(column);
   position: relative;
+  min-width: 320px;
   font-family: $font-family;
   font-size: $font-size;
   color: $text-color;

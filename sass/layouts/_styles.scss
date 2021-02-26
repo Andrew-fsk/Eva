@@ -36,6 +36,13 @@
     width: 360px;
     text-align: center;
     margin-bottom: 40px;
+
+    @include breakpoint(sm-down){
+      width: 350px;
+    }
+    @include breakpoint(xs){
+      width: 290px;
+    }
   }
 }
 
@@ -70,6 +77,9 @@
   }
   @include breakpoint(xs){
     width: calc(50% - 20px);
+  }
+  @include breakpoint(smxs){
+    width: calc(100% - 20px);
   }
 }
 
@@ -512,6 +522,7 @@ footer{
   .slide{
     max-height: 100px;
     margin: 0 2.5px;
+    cursor: pointer;
     .slick-list{
       margin: 0 -2.5px;
     }
@@ -675,6 +686,9 @@ footer{
 
 .text-block{
   padding: 50px 0;
+  &.last{
+    padding-bottom: 80px;
+  }
   @include breakpoint(sm-down){
     padding: 20px 0;
   }
@@ -685,6 +699,7 @@ footer{
   color: #ffffff;
   font-size: 20px;
   text-align: center;
+  line-height: normal;
   @include breakpoint(xs){
     font-size: 16px;
   }

@@ -16,6 +16,9 @@ header {
 }
 
 .logo{
+  img{
+    max-height: 75px;
+  }
   @include breakpoint(sm-down){
     margin-bottom: 25px;
   }
@@ -28,6 +31,7 @@ header {
   @include flexbox;
   @include align-items(center);
   @include justify-content(space-between);
+  padding: 0 15px;
   @include breakpoint(sm-down){
     @include flex-direction(column);
   }

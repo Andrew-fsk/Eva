@@ -18,7 +18,6 @@
 <body>
 <div class="wrap">
     <header>
-        <div class="container">
             <div class="header-row">
                 <a href="#" class="logo" title="Eva">
                     <img src="./images/logo.png" alt="Logo">
@@ -30,7 +29,6 @@
                 </nav>
                 <a href="tel:+78125027037" class="callback">+ 7 (812) 502-70-37</a>
             </div>
-        </div>
     </header>
     <main>
         <section id="banner">
@@ -54,7 +52,7 @@
             <div class="master-block">
                 <h2>СЕГОДНЯ В САЛОНЕ РАБОТАЮТ 9 МАСТЕРОВ</h2>
                 <div class="ac-jc">
-                    <a href="tel:8812502-70-37" class="callback big">ХОЧУ МАССАЖ</a>
+                    <span class="callback big" onclick="modalToggle()">ХОЧУ МАССАЖ</span>
                 </div>
                 <div class="ac-jc">
                     <div class="h1 master-title">НАШИ МАСТЕРА</div>
@@ -364,7 +362,7 @@
                 <div class="text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.</div>
             </div>
         </div>
-        <div class="text-block master-block">
+        <div class="text-block master-block last">
             <div class="container">
                 <div class="ac-jc">
                     <div class="master-title">
@@ -384,11 +382,11 @@
                 </div>
                 <div class="validation-field">
                     <input type="text">
-                    <div class="placeholder">Ваше имя:</div>
+                    <div class="placeholder">Ваш телефон:</div>
                 </div>
                 <div class="ac-jc">
                     <label class="callback">
-                        <span>Отправить</span>
+                        <span>Записаться</span>
                         <input type="submit">
                     </label>
                 </div>

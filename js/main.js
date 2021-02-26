@@ -39,12 +39,26 @@ $(document).ready(function ($) {
         touchmoved = false;
     });
 
+    let touchmoved1;
+
+    $(document).on('click touchend', '.program-item', function (e) {
+        if (touchmoved1 !== true) {
+                modalToggle();
+                return false;
+        }
+    }).on('touchmove', '.program-item', function () {
+        touchmoved1 = true;
+    }).on('touchstart', '.program-item', function () {
+        touchmoved1 = false;
+    });
+
     $('.slider').slick({
         swipeToSlide: true,
         arrows: true,
         dots: false,
+        focusOnSelect: true,
         slidesToShow: 1,
-        infinite: false,
+        infinite: true,
         slidesToScroll: 1,
         touchMove: true,
         asNavFor: '.slider-nav',
@@ -75,7 +89,8 @@ $(document).ready(function ($) {
         arrows: true,
         dots: false,
         slidesToShow: 8,
-        infinite: false,
+        focusOnSelect: true,
+        infinite: true,
         slidesToScroll: 1,
         touchMove: true,
         asNavFor: '.slider',

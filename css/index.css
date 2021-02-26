@@ -680,6 +680,9 @@ header {
   }
 }
 
+.logo img {
+  max-height: 75px;
+}
 @media (max-width: 1024px) {
   .logo {
     margin-bottom: 25px;
@@ -711,6 +714,7 @@ header {
   -ms-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: space-between;
+  padding: 0 15px;
 }
 @media (max-width: 1024px) {
   .header-row {
@@ -1147,6 +1151,21 @@ nav {
   text-align: center;
   margin-bottom: 40px;
 }
+@media (max-width: 1024px) {
+  .master-block .callback {
+    width: 350px;
+  }
+}
+@media (hover: none) and (pointer: coarse) {
+  .master-block .callback {
+    width: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .master-block .callback {
+    width: 290px;
+  }
+}
 
 .master-title {
   color: #ffffff !important;
@@ -1194,6 +1213,11 @@ nav {
 @media (max-width: 767px) {
   .master-item {
     width: calc(50% - 20px);
+  }
+}
+@media (max-width: 500px) {
+  .master-item {
+    width: calc(100% - 20px);
   }
 }
 
@@ -1844,6 +1868,7 @@ footer {
 .slider-nav .slide {
   max-height: 100px;
   margin: 0 2.5px;
+  cursor: pointer;
 }
 .slider-nav .slide .slick-list {
   margin: 0 -2.5px;
@@ -2073,6 +2098,9 @@ footer {
 .text-block {
   padding: 50px 0;
 }
+.text-block.last {
+  padding-bottom: 80px;
+}
 @media (max-width: 1024px) {
   .text-block {
     padding: 20px 0;
@@ -2090,6 +2118,7 @@ footer {
   color: #ffffff;
   font-size: 20px;
   text-align: center;
+  line-height: normal;
 }
 @media (max-width: 767px) {
   .text-block .text {
