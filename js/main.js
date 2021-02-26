@@ -31,6 +31,9 @@ $(document).ready(function ($) {
             if(!$(e.target).hasClass('tel-more')){
                 modalGirlToggle();
                 return false;
+            }else{
+                modalToggle();
+                return false;
             }
         }
     }).on('touchmove', '.master-item', function () {
