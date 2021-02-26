@@ -54,7 +54,7 @@
             </div>
             <div class="container">
                 <div class="master-grid">
-                    <div class="master-item">
+                    <div class="master-item" id="1">
                         <div class="master-image">
                             <img src="./images/master.jpg" alt="Руслана, 22 года">
                         </div>
@@ -66,11 +66,11 @@
                             <div class="price">От 2800 р.</div>
                             <div class="more-column">
                                 <div class="more">Еще фото</div>
-                                <div class="more">Хочу массаж!</div>
+                                <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
                             </div>
                         </div>
                     </div>
-                    <div class="master-item">
+                    <div class="master-item" id="2">
                         <div class="master-image">
                             <img src="./images/master.jpg" alt="Руслана, 22 года">
                         </div>
@@ -82,11 +82,12 @@
                             <div class="price">От 2800 р.</div>
                             <div class="more-column">
                                 <div class="more">Еще фото</div>
-                                <div class="more">Хочу массаж!</div>
+                                <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
+
                             </div>
                         </div>
                     </div>
-                    <div class="master-item">
+                    <div class="master-item" id="3">
                         <div class="master-image">
                             <img src="./images/master.jpg" alt="Руслана, 22 года">
                         </div>
@@ -98,11 +99,12 @@
                             <div class="price">От 2800 р.</div>
                             <div class="more-column">
                                 <div class="more">Еще фото</div>
-                                <div class="more">Хочу массаж!</div>
+                                <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
+
                             </div>
                         </div>
                     </div>
-                    <div class="master-item">
+                    <div class="master-item" id="4">
                         <div class="master-image">
                             <img src="./images/master.jpg" alt="Руслана, 22 года">
                         </div>
@@ -114,11 +116,11 @@
                             <div class="price">От 2800 р.</div>
                             <div class="more-column">
                                 <div class="more">Еще фото</div>
-                                <div class="more">Хочу массаж!</div>
+                                <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
                             </div>
                         </div>
                     </div>
-                    <div class="master-item">
+                    <div class="master-item" id="5">
                         <div class="master-image">
                             <img src="./images/master.jpg" alt="Руслана, 22 года">
                         </div>
@@ -130,11 +132,11 @@
                             <div class="price">От 2800 р.</div>
                             <div class="more-column">
                                 <div class="more">Еще фото</div>
-                                <div class="more">Хочу массаж!</div>
+                                <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
                             </div>
                         </div>
                     </div>
-                    <div class="master-item">
+                    <div class="master-item" id="6">
                         <div class="master-image">
                             <img src="./images/master.jpg" alt="Руслана, 22 года">
                         </div>
@@ -146,11 +148,11 @@
                             <div class="price">От 2800 р.</div>
                             <div class="more-column">
                                 <div class="more">Еще фото</div>
-                                <div class="more">Хочу массаж!</div>
+                                <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
                             </div>
                         </div>
                     </div>
-                    <div class="master-item">
+                    <div class="master-item" id="6">
                         <div class="master-image">
                             <img src="./images/master.jpg" alt="Руслана, 22 года">
                         </div>
@@ -162,11 +164,11 @@
                             <div class="price">От 2800 р.</div>
                             <div class="more-column">
                                 <div class="more">Еще фото</div>
-                                <div class="more">Хочу массаж!</div>
+                                <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
                             </div>
                         </div>
                     </div>
-                    <div class="master-item">
+                    <div class="master-item" id="7">
                         <div class="master-image">
                             <img src="./images/master.jpg" alt="Руслана, 22 года">
                         </div>
@@ -178,7 +180,7 @@
                             <div class="price">От 2800 р.</div>
                             <div class="more-column">
                                 <div class="more">Еще фото</div>
-                                <div class="more">Хочу массаж!</div>
+                                <a href="tel:8812502-70-37" class="more tel-more">Хочу массаж!</a>
                             </div>
                         </div>
                     </div>
@@ -306,6 +308,97 @@
             </form>
         </div>
         <div class="back-layer hide" onclick="modalToggle()"></div>
+        <div class="back-layer-girl hide" onclick="modalGirlToggle()"></div>
+        <div class="girl-modal hide">
+            <div class="close-modal" onclick="modalGirlToggle()"></div>
+            <div class="girl-content">
+                <div class="girl-row">
+                    <div class="slider-wrap">
+                        <div class="slider">
+                            <div class="slide square">
+                                <img src="./images/master.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master1.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master2.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master3.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master1.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master2.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master3.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master1.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master2.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master3.jpg" alt="master">
+                            </div>
+                        </div>
+                        <div class="slider-nav">
+                            <div class="slide square">
+                                <img src="./images/master.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master1.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master2.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master3.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master1.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master2.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master3.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master1.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master2.jpg" alt="master">
+                            </div>
+                            <div class="slide square">
+                                <img src="./images/master3.jpg" alt="master">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="name">Руслана, 22 года</div>
+                        <div class="price">От 2800р.</div>
+                        <div class="text">Аппетитная Руслана любит все цветы, кроме роз. Шипы ей и в общении не по вкусу. Да и вообще - из остренького только соски.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 <footer>
@@ -328,6 +421,7 @@
 </footer>
 <script src="./js/ajquery-1.12.0.min.js"></script>
 <script src="./js/typed.min.js"></script>
+<script src="./js/slick.js"></script>
 <script src="./js/main.js"></script>
 
 </body>
