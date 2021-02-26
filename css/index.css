@@ -8,7 +8,7 @@ body {
 
 .clearfix:before, .clearfix:after {
   content: " ";
-  display: table; 
+  display: table;
 }
 
 .clearfix:after {
@@ -1703,11 +1703,13 @@ footer {
 .girl-modal {
   padding: 40px 20px;
   background-color: #ffffff;
-  width: 80%;
+  width: 1200px;
+  max-width: 90%;
   position: fixed;
   left: 50%;
   top: 50%;
-  max-height: 100vh;
+  max-height: 80vh;
+  min-height: 80vh;
   overflow-y: auto;
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
