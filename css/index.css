@@ -988,7 +988,6 @@ nav {
   z-index: 999;
   width: 500px;
   max-width: 100%;
-  transition: opacity 0.4s;
 }
 .modal.hide {
   opacity: 0;
@@ -1047,7 +1046,6 @@ nav {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 998;
-  transition: opacity 0.4s;
 }
 .back-layer.hide, .hide.back-layer-girl {
   opacity: 0;
@@ -1150,7 +1148,7 @@ nav {
 }
 
 .master-title {
-  color: #ffffff;
+  color: #ffffff !important;
   position: relative;
   padding-bottom: 20px;
   margin-bottom: 50px;
@@ -1716,7 +1714,6 @@ footer {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 999;
-  transition: opacity 0.4s;
 }
 .girl-modal .close-modal:after, .girl-modal .close-modal:before {
   background-color: #2d1829;

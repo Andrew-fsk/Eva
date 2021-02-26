@@ -40,7 +40,7 @@
 }
 
 .master-title{
-  color: #ffffff;
+  color: #ffffff !important;
   position: relative;
   padding-bottom: 20px;
   margin-bottom: 50px;
@@ -415,7 +415,6 @@ footer{
   overflow-y: auto;
   @include transform(translate(-50%, -50%));
   z-index: 999;
-  transition: opacity .4s;
   .close-modal:after,.close-modal:before{
     background-color: #2d1829;
   }
