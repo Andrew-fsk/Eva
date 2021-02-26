@@ -128,6 +128,15 @@ $(document).ready(function ($) {
         e.preventDefault();
     });
 
+    $('.validation-field input[type="text"],.validation-field input[type="number"],.validation-field textarea').on("blur", function () {
+        $(this).val() ? $(this).parent().addClass('active') : $(this).parent().removeClass('active');
+    }).each(function () {
+        $(this).val() ? $(this).parent().addClass('active') : $(this).parent().removeClass('active');
+        if($(this).attr("placeholder") && $(this).attr("placeholder").indexOf('*') != -1){
+            var placeholder = $(this).attr("placeholder");
+            $(this).next(".placeholder").text(placeholder);
+        }
+    });
 })
 
 
