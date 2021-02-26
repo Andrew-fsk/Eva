@@ -1708,8 +1708,7 @@ footer {
   position: fixed;
   left: 50%;
   top: 50%;
-  max-height: 80vh;
-  min-height: 80vh;
+  max-height: 100vh;
   overflow-y: auto;
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);

@@ -412,8 +412,7 @@ footer{
   position: fixed;
   left: 50%;
   top: 50%;
-  max-height: 80vh;
-  min-height: 80vh;
+  max-height: 100vh;
   overflow-y: auto;
   @include transform(translate(-50%, -50%));
   z-index: 999;
