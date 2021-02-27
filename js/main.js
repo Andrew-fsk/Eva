@@ -11,27 +11,25 @@ $(document).ready(function ($) {
             '                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>')
     }, 400)
 
-    if (isMobile.any()) {
-        $('body').append('<script type="text/javascript" src="./js/select2.min.js"></script>');
-        let select = $('.mob-select-tab');
-        select.select2({
-            minimumResultsForSearch: -1,
-        })
 
-        select.on('select2:select', function (e) {
-            var id = e.params.data.id;
-            $("[href='#" + id + "']").click();
-        });
-    }
+    let select = $('.mob-select-tab');
+    select.select2({
+        minimumResultsForSearch: -1,
+    })
+
+    select.on('select2:select', function (e) {
+        var id = e.params.data.id;
+        $("[href='#" + id + "']").click();
+    });
 
     let touchmoved;
 
     $(document).on('click touchend', '.master-item', function (e) {
         if (touchmoved !== true) {
-            if(!$(e.target).hasClass('tel-more')){
+            if (!$(e.target).hasClass('tel-more')) {
                 modalGirlToggle();
                 return false;
-            }else{
+            } else {
                 modalToggle();
                 return false;
             }
@@ -46,8 +44,8 @@ $(document).ready(function ($) {
 
     $(document).on('click touchend', '.program-item', function (e) {
         if (touchmoved1 !== true) {
-                modalToggle();
-                return false;
+            modalToggle();
+            return false;
         }
     }).on('touchmove', '.program-item', function () {
         touchmoved1 = true;
@@ -65,7 +63,7 @@ $(document).ready(function ($) {
         slidesToScroll: 1,
         touchMove: true,
         asNavFor: '.slider-nav',
-        responsive:[
+        responsive: [
             {
                 breakpoint: 768,
                 settings: {
@@ -97,7 +95,7 @@ $(document).ready(function ($) {
         slidesToScroll: 1,
         touchMove: true,
         asNavFor: '.slider',
-        responsive:[
+        responsive: [
             {
                 breakpoint: 768,
                 settings: {
@@ -127,7 +125,7 @@ $(document).ready(function ($) {
             if (
                 scrollY > sectionTop &&
                 scrollY <= sectionTop + sectionHeight
-            ){
+            ) {
                 document.querySelector("nav a[href*=" + sectionId + "]").classList.add("active");
             } else {
                 document.querySelector("nav a[href*=" + sectionId + "]").classList.remove("active");
@@ -136,13 +134,19 @@ $(document).ready(function ($) {
     }
 
     let menuItems = $('nav').find("a");
-
-    menuItems.click(function(e){
+    let header = $('header');
+    menuItems.click(function (e) {
         var href = $(this).attr("href"),
-            offsetTop = href === "#" ? 0 : $(href).offset().top-$('header').innerHeight();
-        $('html, body').stop().animate({
-            scrollTop: offsetTop
-        }, 850);
+            offsetTop = href === "#" ? 0 : $(href).offset().top - header.innerHeight();
+        if (header.css('position') === 'fixed') {
+            $('html, body').stop().animate({
+                scrollTop: offsetTop
+            }, 850);
+        } else {
+            $('html, body').stop().animate({
+                scrollTop: offsetTop + header.innerHeight()
+            }, 850);
+        }
         e.preventDefault();
     });
 
@@ -150,7 +154,7 @@ $(document).ready(function ($) {
         $(this).val() ? $(this).parent().addClass('active') : $(this).parent().removeClass('active');
     }).each(function () {
         $(this).val() ? $(this).parent().addClass('active') : $(this).parent().removeClass('active');
-        if($(this).attr("placeholder") && $(this).attr("placeholder").indexOf('*') != -1){
+        if ($(this).attr("placeholder") && $(this).attr("placeholder").indexOf('*') != -1) {
             var placeholder = $(this).attr("placeholder");
             $(this).next(".placeholder").text(placeholder);
         }
@@ -165,6 +169,12 @@ $(window).resize(function () {
 })
 
 function modalToggle() {
+    $.ajax({
+        url: "form.html",
+        context: $('.modal'),
+    }).done(function(response) {
+        $( this ).html( response );
+    });
     $('.modal').toggleClass('hide');
     $('.back-layer').toggleClass('hide');
     $('body').toggleClass('no-scroll');
@@ -174,6 +184,15 @@ function modalGirlToggle() {
     $('.girl-modal').toggleClass('hide');
     $('.back-layer-girl').toggleClass('hide');
     $('body').toggleClass('no-scroll');
+}
+
+function successModal() {
+    $.ajax({
+        url: "success.html",
+        context: $('.modal'),
+    }).done(function(response) {
+        $( this ).html( response );
+    });
 }
 
 $(function () {

@@ -318,18 +318,18 @@
 
 .mob-select-tab{
   display: none;
-  @include breakpoint(sm-down){
-    display: block;
-  }
 }
 
 .tabs{
   .select2{
+    display: none;
+    @include breakpoint(sm-down){
+      display: block !important;
+    }
     .select2-results__option{
       color: #daa942;
     }
     margin: auto;
-    display: block !important;
     margin-bottom: 40px;
     width: 420px !important;
     max-width: 100%;

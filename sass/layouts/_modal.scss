@@ -25,7 +25,7 @@
     }
   }
 
-  h4 {
+  h4,h6 {
     color: #ffffff;
   }
 
@@ -87,7 +87,14 @@
   margin: 0 auto 20px auto;
   width: 300px;
   max-width: 100%;
-
+  &.error{
+    .placeholder{
+    color:#a50000;
+    }
+    input{
+      border: 2px solid #a50000;
+    }
+  }
   .placeholder {
     position: absolute;
     pointer-events: none;

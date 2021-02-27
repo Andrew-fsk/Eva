@@ -1005,7 +1005,7 @@ nav {
 .modal .callback:hover {
   color: #2d1829;
 }
-.modal h4 {
+.modal h4, .modal h6 {
   color: #ffffff;
 }
 
@@ -1061,6 +1061,12 @@ nav {
   margin: 0 auto 20px auto;
   width: 300px;
   max-width: 100%;
+}
+.validation-field.error .placeholder {
+  color: #a50000;
+}
+.validation-field.error input {
+  border: 2px solid #a50000;
 }
 .validation-field .placeholder {
   position: absolute;
@@ -1587,23 +1593,23 @@ nav {
 .mob-select-tab {
   display: none;
 }
-@media (max-width: 1024px) {
-  .mob-select-tab {
-    display: block;
-  }
-}
-@media (hover: none) and (pointer: coarse) {
-  .mob-select-tab {
-    display: block;
-  }
-}
 
 .tabs .select2 {
+  display: none;
   margin: auto;
-  display: block !important;
   margin-bottom: 40px;
   width: 420px !important;
   max-width: 100%;
+}
+@media (max-width: 1024px) {
+  .tabs .select2 {
+    display: block !important;
+  }
+}
+@media (hover: none) and (pointer: coarse) {
+  .tabs .select2 {
+    display: block !important;
+  }
 }
 .tabs .select2 .select2-results__option {
   color: #daa942;
